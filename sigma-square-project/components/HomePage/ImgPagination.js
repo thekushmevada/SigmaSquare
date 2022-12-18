@@ -65,10 +65,10 @@ const ImgPagination = () => {
                 style={{ height: "calc(100vh - 96px)" }}
               ></div>
               <div
-                className="relative flex flex-col justify-center items-center text-white w-1/2 px-4 pt-20"
+                className="relative flex flex-col justify-center items-center text-white w-full md:w-1/2 px-4 pt-20"
                 style={{ height: "calc(100vh - 96px)" }}
               >
-                <div className="w-2/3 lg:w-1/2">
+                <div className="w-full md:w-2/3 sm:w-3/4">
                   <h1 className="text-6xl font-sans text-white font-semibold">
                     {data.title}
                   </h1>

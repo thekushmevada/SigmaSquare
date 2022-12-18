@@ -8,15 +8,15 @@ const AboutPage = () => {
         <h1 className="text-6xl font-sans text-white pt-7 font-semibold">
           About us ...
         </h1>
-        <div className="flex justify-center items-center py-16 gap-10">
-          <div className="w-1/2">
+        <div className="flex flex-col md:flex-row justify-center items-center py-16 gap-5 md:gap-10">
+          <div className="w-full md:w-1/2 max-w-md">
             <Image
               src={about}
               style={{ width: "100%", height: "auto" }}
               alt="about"
             />
           </div>
-          <div className="flex flex-col gap-8 text-white w-1/2">
+          <div className="flex flex-col gap-4 md:gap-8 text-white w-full md:w-1/2">
             <h1 className="text-4xl font-sans text-[#CABA93]">Our Goal</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
