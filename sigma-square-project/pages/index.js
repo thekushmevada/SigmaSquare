@@ -11,7 +11,7 @@ const Home = () => {
       <div className="-mt-10">
         <AboutPage />
       </div>
-      <h1 className="text-9xl">Team Section Dishatnnnnn </h1>
+      <h1 className="text-9xl">Team Section </h1>
       <Footer />
     </>
   );
