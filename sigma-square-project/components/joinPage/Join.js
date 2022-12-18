@@ -92,7 +92,7 @@ const Join = () => {
                   Create an account
                 </button>
                 <p className="text-sm font-light text-gray-500 dark:text-gray-400">
-                  Already have an account? <Link href="/login">Login here</Link>
+                  Already have an account? <Link href="/login">Login here.</Link>
                 </p>
               </form>
             </div>
