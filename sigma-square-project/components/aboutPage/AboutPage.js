@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import about from "../../img/a.png";
+import about from "../../img/about_img.png";
 const AboutPage = () => {
   return (
     <div className="w-full flex items-center bg-[#134F59] min-h-screen max-h-auto">

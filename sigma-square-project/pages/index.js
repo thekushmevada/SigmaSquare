@@ -8,9 +8,7 @@ const Home = () => {
     <>
       <HeaderMain />
       <ImgPagination />
-      <div className="-mt-10">
-        <AboutPage />
-      </div>
+      <AboutPage />
       <h1 className="text-9xl">Team Section </h1>
       <Footer />
     </>
