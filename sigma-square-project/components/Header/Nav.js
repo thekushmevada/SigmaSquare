@@ -10,7 +10,9 @@ const Nav = () => {
           <Link href="/login">
             <Button btnText="Log in" className="w-40" />
           </Link>
+          <Link href="/join">
           <Button btnText="Join" className="w-40" />
+          </Link>
         </div>
       </div>
     </nav>
