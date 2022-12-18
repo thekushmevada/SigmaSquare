@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import Sigma_Logo_2 from "../../img/Sigma_Logo_2.png";
 const Footer = () => {
@@ -14,10 +15,14 @@ const Footer = () => {
             <h1 className="text-3xl font-sans text-[#CABA93]">Sigma Square</h1>
             <p className="text-[#FEFCF9]"> A smarter way to move forward</p>
             <button className="rounded-full bg-[#635D52] py-1">
-              <span className="py-1 px-3 text-[#FEFCF9] border-r-2">
-                Log in
-              </span>
-              <span className="px-4 text-[#FEFCF9]">Join</span>
+              <Link href="/login">
+                <span className="py-1 px-3 text-[#FEFCF9] border-r-2">
+                  Log in
+                </span>
+              </Link>
+              <Link href="/login">
+                <span className="px-4 text-[#FEFCF9]">Join</span>
+              </Link>
             </button>
           </div>
           <div className="flex justify-evenly w-2/3">
