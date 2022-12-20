@@ -1,15 +1,11 @@
 import Image from "next/image";
 import React from "react";
-// import { Carousel } from "react-responsive-carousel";
-import img from "../../img/bg_img.png";
-// import Sigma_Logo_2 from "../../img/Sigma_Logo_2.png";
 import mainpage_img_1 from "../../img/mainpage_img_1.png";
 import mainpage_img_2 from "../../img/mainpage_img_2.png";
 import mainpage_img_3 from "../../img/mainpage_img_3.png";
 import mainpage_img_4 from "../../img/mainpage_img_4.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Carousel from "react-bootstrap/Carousel";
-import "bootstrap/dist/css/bootstrap.min.css";
 const ImgPagination = () => {
   const imgPagination = {
     items: [

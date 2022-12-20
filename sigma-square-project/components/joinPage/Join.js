@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
- 
+
 const Join = () => {
   return (
     <>
@@ -11,7 +11,11 @@ const Join = () => {
               <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                 Create and account
               </h1>
-              <form className="space-y-4 md:space-y-6" action="/api/register" method="post">
+              <form
+                className="space-y-4 md:space-y-6"
+                action="/api/register"
+                method="post"
+              >
                 <div>
                   <label
                     for="email"
@@ -92,7 +96,8 @@ const Join = () => {
                   Create an account
                 </button>
                 <p className="text-sm font-light text-gray-500 dark:text-gray-400">
-                  Already have an account? <Link href="/login">Login here.</Link>
+                  Already have an account?{" "}
+                  <Link href="/login">Login here.</Link>
                 </p>
               </form>
             </div>
