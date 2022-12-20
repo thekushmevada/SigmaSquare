@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const SigmaSquareSchema = new mongoose.Schema({
+const UserSchema = new mongoose.Schema({
     email: {
         type: String,
         required: true,
@@ -18,4 +18,4 @@ const SigmaSquareSchema = new mongoose.Schema({
     },
 })
 
-module.exports = mongoose.models.sigmasquare || mongoose.model('SigmaSquare', SigmaSquareSchema);
+module.exports = mongoose.models.User || mongoose.model('SigmaSquare', UserSchema);
