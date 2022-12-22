@@ -1,16 +1,22 @@
 import Modal from "react-bootstrap/Modal";
+import { RxCrossCircled } from "react-icons/rx";
 const Join = (props) => {
   const { showJoin, handleCloseJoin } = props;
-
   return (
     <>
       <Modal show={showJoin} onHide={handleCloseJoin}>
-        <div className="bg-[#2e2b22] ">
-          <h1 className="text-center text-4xl font-sans text-[#CABA93] pt-7 font-semibold">
-            Join Now
-          </h1>
+        <div className="bg-[#2e2b22] flex flex-col ">
+          <div className="flex justify-end mt-3 mr-3">
+            <RxCrossCircled color="white" size="40px" />
+          </div><br />
+          <div className="text-center">
+            <h1 className=" text-4xl font-sans text-[#CABA93] font-semibold">
+              Join Now
+            </h1>
+          </div>
+
           <section>
-            <div className="flex flex-col items-center justify-center px-2 py-8 w-full gap-4">
+            <div className="flex flex-col items-center justify-center px-2 py-4 w-full gap-4">
               <form className="space-y-4 w-full px-4">
                 <div>
                   <label

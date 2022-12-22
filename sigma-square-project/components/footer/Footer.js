@@ -2,7 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Sigma_Logo_2 from "../../img/Sigma_Logo_2.png";
+import Join from "../joinPage/Join";
+import Login from "../loginpage/Login";
+import { useContext } from "react";
+import { layoutStateContext } from "../../context/LayoutContext";
 const Footer = () => {
+  const {
+    showLogin,
+    handleCloseLogin,
+    handleShowLogin,
+    showJoin,
+    handleCloseJoin,
+    handleShowJoin,
+  } = useContext(layoutStateContext);
   return (
     <>
       <div className="bg-[#134F59] py-3">
@@ -15,14 +27,15 @@ const Footer = () => {
             <h1 className="text-3xl font-sans text-[#CABA93]">Sigma Square</h1>
             <p className="text-[#FEFCF9]"> A smarter way to move forward</p>
             <button className="rounded-full bg-[#635D52] py-1">
-              <Link href="/login" style={{textDecoration:"none"}}>
-                <span className="py-1 px-3 text-[#FEFCF9] border-r-2">
-                  Log in
-                </span>
-              </Link>
-              <Link href="/login" style={{textDecoration:"none"}}>
-                <span className="px-4 text-[#FEFCF9]">Join</span>
-              </Link>
+              <span className="py-1 px-3 text-[#FEFCF9] border-r-2" onClick={handleShowLogin}>
+                Log in
+              </span>
+              <Login
+                showLogin={showLogin}
+                handleCloseLogin={handleCloseLogin}
+              />
+              <span className="px-4 text-[#FEFCF9]" onClick={handleShowJoin}>Join</span>
+              <Join showJoin={showJoin} handleCloseJoin={handleCloseJoin} />
             </button>
           </div>
           <div className="flex justify-between sm:justify-evenly w-full px-6">
