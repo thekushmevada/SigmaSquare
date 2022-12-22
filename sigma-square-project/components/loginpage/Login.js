@@ -1,12 +1,22 @@
 import Modal from "react-bootstrap/Modal";
+import { RxCrossCircled } from "react-icons/rx";
 const Login = (props) => {
-  const { showLogin, handleCloseLogin } = props;
+  const { showLogin, handleCloseLogin} = props;
   return (
     <Modal show={showLogin} onHide={handleCloseLogin}>
-      <div className="bg-[#2e2b22] ">
-        <h1 className="text-center text-4xl font-sans text-[#CABA93] pt-7 font-semibold">
-          Log In
-        </h1>
+      <div className="bg-[#2e2b22] flex flex-col">
+        <button
+          className="flex justify-end mt-3 mr-3"
+          onClick={handleCloseLogin}
+        >
+          <RxCrossCircled color="white" size="40px" />
+        </button>
+        <br />
+        <div className="text-center">
+          <h1 className=" text-4xl font-sans text-[#CABA93] font-semibold">
+            Log In
+          </h1>
+        </div>
         <section>
           <div className="flex flex-col items-center justify-center px-2 py-8 w-full gap-4">
             <form className="space-y-4 w-full px-4" action="#">
@@ -68,15 +78,6 @@ const Login = (props) => {
                   Log In
                 </span>
               </button>
-              <p className="text-sm font-light text-white ">
-                Don’t have an account yet?{" "}
-                <span
-                  className="font-medium text-white hover:underline "
-                  onClick={handleCloseLogin}
-                >
-                  Sign up
-                </span>
-              </p>
             </form>
           </div>
         </section>

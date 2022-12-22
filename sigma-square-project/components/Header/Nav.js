@@ -25,7 +25,12 @@ const Nav = () => {
           >
             Login
           </button>
-          <Login showLogin={showLogin} handleCloseLogin={handleCloseLogin} />
+          <Login
+            showLogin={showLogin}
+            handleCloseLogin={handleCloseLogin}
+            showJoin={showJoin}
+            handleCloseJoin={handleCloseJoin}
+          />
 
           <button
             className={`${
@@ -35,7 +40,12 @@ const Nav = () => {
           >
             Join
           </button>
-          <Join showJoin={showJoin} handleCloseJoin={handleCloseJoin} />
+          <Join
+            showJoin={showJoin}
+            handleCloseJoin={handleCloseJoin}
+            showLogin={showLogin}
+            handleCloseLogin={handleCloseLogin}
+          />
         </div>
       </div>
     </nav>

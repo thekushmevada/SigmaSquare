@@ -1,14 +1,16 @@
 import Modal from "react-bootstrap/Modal";
 import { RxCrossCircled } from "react-icons/rx";
+
 const Join = (props) => {
   const { showJoin, handleCloseJoin } = props;
   return (
     <>
       <Modal show={showJoin} onHide={handleCloseJoin}>
-        <div className="bg-[#2e2b22] flex flex-col ">
-          <div className="flex justify-end mt-3 mr-3">
+        <div className="bg-[#2e2b22] flex flex-col" onClick={handleCloseJoin}>
+          <button className="flex justify-end mt-3 mr-3">
             <RxCrossCircled color="white" size="40px" />
-          </div><br />
+          </button>
+          <br />
           <div className="text-center">
             <h1 className=" text-4xl font-sans text-[#CABA93] font-semibold">
               Join Now
@@ -20,7 +22,7 @@ const Join = (props) => {
               <form className="space-y-4 w-full px-4">
                 <div>
                   <label
-                    for="text"
+                    htmlhtmlFor="text"
                     className="block mb-2 text-sm font-medium text-white"
                   >
                     Your name
@@ -36,7 +38,7 @@ const Join = (props) => {
                 </div>
                 <div>
                   <label
-                    for="email"
+                    htmlhtmlFor="email"
                     className="block mb-2 text-sm font-medium text-white"
                   >
                     Your email
@@ -52,7 +54,7 @@ const Join = (props) => {
                 </div>
                 <div>
                   <label
-                    for="password"
+                    htmlhtmlFor="password"
                     className="block mb-2 text-sm font-medium text-white"
                   >
                     Password
@@ -68,7 +70,7 @@ const Join = (props) => {
                 </div>
                 <div>
                   <label
-                    for="password"
+                    htmlhtmlFor="password"
                     className="block mb-2 text-sm font-medium text-white"
                   >
                     Re enter the password
@@ -94,27 +96,17 @@ const Join = (props) => {
                       />
                     </div>
                     <div className="ml-3 text-sm">
-                      <label for="remember" className="text-white">
+                      <label htmlhtmlFor="remember" className="text-white">
                         Remember me
                       </label>
                     </div>
                   </div>
-                  <button className="bg-[#6F6657] w-44 h-12 rounded-lg">
+                  <button className="bg-[#6F6657] w-28 md:w-44 h-12 rounded-lg">
                     <span className="font-sans font-medium text-xl text-[#FEFCF9]">
                       Join In
                     </span>
                   </button>
                 </div>
-
-                <p className="text-sm font-light text-white ">
-                  Already have an account ?
-                  <span
-                    className="font-medium text-white hover:underline"
-                    onClick={handleCloseJoin}
-                  >
-                    Log In
-                  </span>
-                </p>
               </form>
             </div>
           </section>
