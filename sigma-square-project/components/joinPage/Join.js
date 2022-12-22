@@ -1,16 +1,33 @@
 import Modal from "react-bootstrap/Modal";
 const Join = (props) => {
   const { showJoin, handleCloseJoin } = props;
+
   return (
     <>
       <Modal show={showJoin} onHide={handleCloseJoin}>
         <div className="bg-[#2e2b22] ">
           <h1 className="text-center text-4xl font-sans text-[#CABA93] pt-7 font-semibold">
-            Join
+            Join Now
           </h1>
           <section>
             <div className="flex flex-col items-center justify-center px-2 py-8 w-full gap-4">
-              <form className="space-y-4 w-full px-4" action="#">
+              <form className="space-y-4 w-full px-4">
+                <div>
+                  <label
+                    for="text"
+                    className="block mb-2 text-sm font-medium text-white"
+                  >
+                    Your name
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    className="bg-[#D7CFC1] border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 "
+                    placeholder="name@company.com"
+                    required=""
+                  />
+                </div>
                 <div>
                   <label
                     for="email"
@@ -43,6 +60,22 @@ const Join = (props) => {
                     required=""
                   />
                 </div>
+                <div>
+                  <label
+                    for="password"
+                    className="block mb-2 text-sm font-medium text-white"
+                  >
+                    Re enter the password
+                  </label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="••••••••"
+                    className="bg-[#D7CFC1] border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                    required=""
+                  />
+                </div>
                 <div className="flex items-center justify-between">
                   <div className="flex items-start">
                     <div className="flex items-center h-5">
@@ -60,19 +93,20 @@ const Join = (props) => {
                       </label>
                     </div>
                   </div>
-                  <span className="text-sm font-medium text-white hover:underline ">
-                    Forgot password?
-                  </span>
+                  <button className="bg-[#6F6657] w-44 h-12 rounded-lg">
+                    <span className="font-sans font-medium text-xl text-[#FEFCF9]">
+                      Join In
+                    </span>
+                  </button>
                 </div>
-                <button className="bg-[#6F6657] w-44 h-12 rounded-lg">
-                  <span className="font-sans font-medium text-xl text-[#FEFCF9]">
-                    Log In
-                  </span>
-                </button>
+
                 <p className="text-sm font-light text-white ">
-                  Don’t have an account yet?{" "}
-                  <span className="font-medium text-white hover:underline ">
-                    Sign up
+                  Already have an account ?
+                  <span
+                    className="font-medium text-white hover:underline"
+                    onClick={handleCloseJoin}
+                  >
+                    Log In
                   </span>
                 </p>
               </form>

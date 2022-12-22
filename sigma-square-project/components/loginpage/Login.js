@@ -5,7 +5,7 @@ const Login = (props) => {
     <Modal show={showLogin} onHide={handleCloseLogin}>
       <div className="bg-[#2e2b22] ">
         <h1 className="text-center text-4xl font-sans text-[#CABA93] pt-7 font-semibold">
-          Join
+          Log In
         </h1>
         <section>
           <div className="flex flex-col items-center justify-center px-2 py-8 w-full gap-4">
@@ -70,7 +70,10 @@ const Login = (props) => {
               </button>
               <p className="text-sm font-light text-white ">
                 Don’t have an account yet?{" "}
-                <span className="font-medium text-white hover:underline ">
+                <span
+                  className="font-medium text-white hover:underline "
+                  onClick={handleCloseLogin}
+                >
                   Sign up
                 </span>
               </p>
