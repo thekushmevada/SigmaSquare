@@ -1,9 +1,6 @@
 import Image from "next/image";
-import React, { useState } from "react";
-import { Carousel } from "react-responsive-carousel";
-import img from "../../img/bg_img.png";
+import React, { useEffect, useState } from "react";
 import Sigma_Logo_2 from "../../img/Sigma_Logo_2.png";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { RiMenu3Line } from "react-icons/ri";
 import { RxCross1 } from "react-icons/rx";
 import { AiFillHome } from "react-icons/ai";
@@ -13,15 +10,33 @@ import { IoIosContact } from "react-icons/io";
 import { MdReviews } from "react-icons/md";
 const SubNav = () => {
   const [open, setOpen] = useState(false);
-
   const handleOpen = () => {
     setOpen(!open);
   };
 
+  const [scrolled, setScrolled] = React.useState(false);
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 200) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  });
+
   return (
-    <>
+    <div
+      className={`${scrolled ? "fixed flex justify-center w-full top-0" : ""}`}
+    >
       <div className="flex justify-center">
-        <div className="absolute container mx-auto px-4 gap-10 flex items-start md:items-center justify-between md:justify-center pt-16">
+        <div
+          className={`absolute container mx-auto px-4 gap-10 flex items-start md:items-center justify-between md:justify-center ${
+            scrolled ? "pt-2" : "pt-16"
+          } `}
+        >
           <Image src={Sigma_Logo_2} style={{ width: "100px" }} />
           <div className="hidden md:flex justify-between rounded-full bg-[#6F6657] px-3 text-[#FEFCF9]">
             <div className=" py-2 px-4">Home</div>
@@ -87,7 +102,7 @@ const SubNav = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

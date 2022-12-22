@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Login from "../loginpage/Login";
 import Join from "../joinPage/Join";
 import { useContext } from "react";
