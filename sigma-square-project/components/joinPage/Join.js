@@ -6,8 +6,8 @@ const Join = (props) => {
   return (
     <>
       <Modal show={showJoin} onHide={handleCloseJoin}>
-        <div className="bg-[#2e2b22] flex flex-col" onClick={handleCloseJoin}>
-          <button className="flex justify-end mt-3 mr-3">
+        <div className="bg-[#2e2b22] flex flex-col" >
+          <button className="flex justify-end mt-3 mr-3" onClick={handleCloseJoin}>
             <RxCrossCircled color="white" size="40px" />
           </button>
           <br />
@@ -19,7 +19,7 @@ const Join = (props) => {
 
           <section>
             <div className="flex flex-col items-center justify-center px-2 py-4 w-full gap-4">
-              <form className="space-y-4 w-full px-4">
+              <form className="space-y-4 w-full px-4" >
                 <div>
                   <label
                     htmlhtmlFor="text"
