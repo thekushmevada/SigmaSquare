@@ -1,7 +1,7 @@
-import connect from "../../lib/mongodb";
+import dbConnect from "../../utils/dbConnect";
 import User from "../../models/User";
 
-connect()
+dbConnect();
 
 export default async function handler(req,res) {
     try{
@@ -12,6 +12,7 @@ export default async function handler(req,res) {
             return  res.json({code:'User not created'})
          }
     } catch (error) {
+        console.log(error)
         res.status(400).json({status:'Not able to create a new user'})
     }
 }
