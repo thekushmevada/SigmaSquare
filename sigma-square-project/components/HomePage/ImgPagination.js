@@ -4,7 +4,6 @@ import mainpage_img_1 from "../../img/mainpage_img_1.png";
 import mainpage_img_2 from "../../img/mainpage_img_2.png";
 import mainpage_img_3 from "../../img/mainpage_img_3.png";
 import mainpage_img_4 from "../../img/mainpage_img_4.png";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Carousel from "react-bootstrap/Carousel";
 const ImgPagination = () => {
   const imgPagination = {
