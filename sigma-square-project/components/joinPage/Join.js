@@ -19,10 +19,10 @@ const Join = (props) => {
 
           <section>
             <div className="flex flex-col items-center justify-center px-2 py-4 w-full gap-4">
-              <form className="space-y-4 w-full px-4" action="/api/register" method="get">
+              <form className="space-y-4 w-full px-4" action="/api/register" method="post">
                 <div>
                   <label
-                    htmlhtmlFor="text"
+                    htmlFor="text"
                     className="block mb-2 text-sm font-medium text-white"
                   >
                     Your name
@@ -38,7 +38,7 @@ const Join = (props) => {
                 </div>
                 <div>
                   <label
-                    htmlhtmlFor="email"
+                    htmlFor="email"
                     className="block mb-2 text-sm font-medium text-white"
                   >
                     Your email
@@ -54,7 +54,7 @@ const Join = (props) => {
                 </div>
                 <div>
                   <label
-                    htmlhtmlFor="password"
+                    htmlFor="password"
                     className="block mb-2 text-sm font-medium text-white"
                   >
                     Password
@@ -70,7 +70,7 @@ const Join = (props) => {
                 </div>
                 <div>
                   <label
-                    htmlhtmlFor="password"
+                    htmlFor="password"
                     className="block mb-2 text-sm font-medium text-white"
                   >
                     Re enter the password
@@ -101,11 +101,12 @@ const Join = (props) => {
                       </label>
                     </div>
                   </div>
-                  <button className="bg-[#6F6657] w-28 md:w-44 h-12 rounded-lg">
-                    <span className="font-sans font-medium text-xl text-[#FEFCF9]">
+                  <input className="bg-[#6F6657] w-28 md:w-44 h-12 rounded-lg" type="submit" value='Register' />
+
+                    {/* <span className="font-sans font-medium text-xl text-[#FEFCF9]">
                       Join In
                     </span>
-                  </button>
+                  </input> */}
                 </div>
               </form>
             </div>
