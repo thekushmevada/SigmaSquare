@@ -33,7 +33,7 @@ const Join = (props) => {
                     id="name"
                     className="bg-[#D7CFC1] border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 "
                     placeholder="name@company.com"
-                    required=""
+                    //required=""
                   />
                 </div>
                 <div>
@@ -49,7 +49,7 @@ const Join = (props) => {
                     id="email"
                     className="bg-[#D7CFC1] border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
                     placeholder="name@company.com"
-                    required=""
+                    //required=""
                   />
                 </div>
                 <div>
@@ -65,7 +65,7 @@ const Join = (props) => {
                     id="password"
                     placeholder="••••••••"
                     className="bg-[#D7CFC1] border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
-                    required=""
+                    //required=""
                   />
                 </div>
                 <div>
@@ -78,10 +78,10 @@ const Join = (props) => {
                   <input
                     type="password"
                     name="password"
-                    id="password"
+                    id="confirm_password"
                     placeholder="••••••••"
                     className="bg-[#D7CFC1] border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
-                    required=""
+                    //required=""
                   />
                 </div>
                 <div className="flex items-center justify-between">
@@ -92,21 +92,17 @@ const Join = (props) => {
                         aria-describedby="remember"
                         type="checkbox"
                         className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300"
-                        required=""
+                        //required=""
                       />
                     </div>
                     <div className="ml-3 text-sm">
-                      <label htmlhtmlFor="remember" className="text-white">
+                      <label htmlFor="remember" className="text-white">
                         Remember me
                       </label>
                     </div>
                   </div>
                   <input className="bg-[#6F6657] w-28 md:w-44 h-12 rounded-lg" type="submit" value='Register' />
 
-                    {/* <span className="font-sans font-medium text-xl text-[#FEFCF9]">
-                      Join In
-                    </span>
-                  </input> */}
                 </div>
               </form>
             </div>

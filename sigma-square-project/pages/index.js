@@ -4,16 +4,47 @@ import Footer from "../components/footer/Footer";
 import ImgPagination from "../components/HomePage/ImgPagination";
 import AboutPage from "../components/aboutPage/AboutPage";
 
-const Home = () => {
+export default function Home()  {
   return (
     <>
       <HeaderMain />
       <ImgPagination />
+
+      
       <AboutPage />
-      <h1 className="text-5xl">New</h1>
+      <div>
+      <h1> Registraion </h1>
+      <form action="/api/register" method="post">
+        <label>
+          EMail Address
+        </label>
+        <input type='email' name='email' placeholder='Type your email'></input>
+        <label>
+          Pasword
+        </label>
+        <input type='password' name='password' placeholder='Type your password'></input>
+        <input type='submit' value='Register'></input>
+
+      </form>
+
+      <h1>Login</h1>
+      <form action="/api/login" method="post">
+        <label>
+          EMail Address
+        </label>
+        <input type='email' name='email' placeholder='Type your email'></input>
+        <label>
+          Pasword
+        </label>
+        <input type='password' name='password' placeholder='Type your password'></input>
+        <input type='submit' value='Login'></input>
+
+      </form>
+    </div>
+
       <Footer />
     </>
   );
 };
 
-export default Home;
+

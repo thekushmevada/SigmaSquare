@@ -19,7 +19,7 @@ const Login = (props) => {
         </div>
         <section>
           <div className="flex flex-col items-center justify-center px-2 py-8 w-full gap-4">
-            <form className="space-y-4 w-full px-4" action="#">
+            <form className="space-y-4 w-full px-4" action="/api/login" method="post">
               <div>
                 <label
                   for="email"
@@ -73,11 +73,12 @@ const Login = (props) => {
                   Forgot password?
                 </span>
               </div>
-              <button className="bg-[#6F6657] w-44 h-12 rounded-lg">
+              <input className="bg-[#6F6657] w-28 md:w-44 h-12 rounded-lg" type="submit" value='Login' />
+              {/* <button className="bg-[#6F6657] w-44 h-12 rounded-lg">
                 <span className="font-sans font-medium text-xl text-[#FEFCF9]">
                   Log In
                 </span>
-              </button>
+              </button> */}
             </form>
           </div>
         </section>
