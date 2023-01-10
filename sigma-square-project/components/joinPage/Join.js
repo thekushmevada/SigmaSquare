@@ -116,20 +116,58 @@ const Join = (props) => {
                 </div>
               </form>
 
+
+
+
+              {/* New form created by Kush */}
               <form action="/api/register" method="post">
-                <label>EMail Address</label>
+                <label className="block mb-2 text-sm font-medium text-white">
+                  EMail Address
+                </label>
+
+                <label
+                  htmlFor="text"
+                  className="block mb-2 text-sm font-medium text-white"
+                >
+                  Your name
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Type your name"
+                  className="bg-[#D7CFC1] border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 "
+                ></input>
+
+                <label
+                  htmlFor="email"
+                  className="block mb-2 text-sm font-medium text-white"
+                >
+                  Your email
+                </label>
                 <input
                   type="email"
                   name="email"
                   placeholder="Type your email"
+                  className="bg-[#D7CFC1] border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
                 ></input>
-                <label>Pasword</label>
+
+                <label
+                  htmlFor="password"
+                  className="block mb-2 text-sm font-medium text-white"
+                >
+                  Password
+                </label>
                 <input
                   type="password"
                   name="password"
                   placeholder="Type your password"
+                  className="bg-[#D7CFC1] border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
                 ></input>
-                <input type="submit" value="Register"></input>
+                <input
+                  className="bg-[#D7CFC1] border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                  type="submit"
+                  value="Register"
+                ></input>
               </form>
             </div>
           </section>
