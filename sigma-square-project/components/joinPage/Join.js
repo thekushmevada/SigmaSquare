@@ -6,8 +6,11 @@ const Join = (props) => {
   return (
     <>
       <Modal show={showJoin} onHide={handleCloseJoin}>
-        <div className="bg-[#2e2b22] flex flex-col" >
-          <button className="flex justify-end mt-3 mr-3" onClick={handleCloseJoin}>
+        <div className="bg-[#2e2b22] flex flex-col">
+          <button
+            className="flex justify-end mt-3 mr-3"
+            onClick={handleCloseJoin}
+          >
             <RxCrossCircled color="white" size="40px" />
           </button>
           <br />
@@ -19,7 +22,11 @@ const Join = (props) => {
 
           <section>
             <div className="flex flex-col items-center justify-center px-2 py-4 w-full gap-4">
-              <form className="space-y-4 w-full px-4" action="/api/register" method="post">
+              <form
+                className="space-y-4 w-full px-4"
+                action="/api/register"
+                method="post"
+              >
                 <div>
                   <label
                     htmlFor="text"
@@ -33,7 +40,7 @@ const Join = (props) => {
                     id="name"
                     className="bg-[#D7CFC1] border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 "
                     placeholder="name@company.com"
-                   // required=""
+                    // required=""
                   />
                 </div>
                 <div>
@@ -49,7 +56,7 @@ const Join = (props) => {
                     id="email"
                     className="bg-[#D7CFC1] border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
                     placeholder="name@company.com"
-                   // required=""
+                    // required=""
                   />
                 </div>
                 <div>
@@ -101,23 +108,29 @@ const Join = (props) => {
                       </label>
                     </div>
                   </div>
-                  <input className="bg-[#6F6657] w-28 md:w-44 h-12 rounded-lg" type="submit" value='Register' />
-
+                  <input
+                    className="bg-[#6F6657] w-28 md:w-44 h-12 rounded-lg"
+                    type="submit"
+                    value="Register"
+                  />
                 </div>
               </form>
 
               <form action="/api/register" method="post">
-        <label>
-          EMail Address
-        </label>
-        <input type='email' name='email' placeholder='Type your email'></input>
-        <label>
-          Pasword
-        </label>
-        <input type='password' name='password' placeholder='Type your password'></input>
-        <input type='submit' value='Register'></input>
-
-      </form>
+                <label>EMail Address</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Type your email"
+                ></input>
+                <label>Pasword</label>
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Type your password"
+                ></input>
+                <input type="submit" value="Register"></input>
+              </form>
             </div>
           </section>
         </div>
