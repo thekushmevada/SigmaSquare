@@ -75,7 +75,7 @@ const Join = (props) => {
                     // required=""
                   />
                 </div>
-                <div>
+                {/* <div>
                   <label
                     htmlFor="password"
                     className="block mb-2 text-sm font-medium text-white"
@@ -90,7 +90,7 @@ const Join = (props) => {
                     className="bg-[#D7CFC1] border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
                     // required=""
                   />
-                </div>
+                </div> */}
                 <div className="flex items-center justify-between">
                   <div className="flex items-start">
                     <div className="flex items-center h-5">
@@ -120,7 +120,7 @@ const Join = (props) => {
 
 
               {/* New form created by Kush */}
-              <form action="/api/register" method="post">
+              {/* <form action="/api/register" method="post">
                 <label className="block mb-2 text-sm font-medium text-white">
                   EMail Address
                 </label>
@@ -168,7 +168,7 @@ const Join = (props) => {
                   type="submit"
                   value="Register"
                 ></input>
-              </form>
+              </form> */}
             </div>
           </section>
         </div>
