@@ -116,9 +116,6 @@ const Join = (props) => {
                 </div>
               </form>
 
-
-
-
               {/* New form created by Kush */}
               {/* <form action="/api/register" method="post">
                 <label className="block mb-2 text-sm font-medium text-white">
