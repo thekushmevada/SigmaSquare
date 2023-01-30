@@ -53,7 +53,7 @@ const Card = () => {
                   <div className="font-bold text-xl mb-2 text-[#CABA93]">
                     {data.name}
                   </div>
-                  <p className="text-white text-base">{data.description}</p>
+                  <p className="text-white text-base break-all">{data.description}</p>
                 </div>
               </div>
             );
