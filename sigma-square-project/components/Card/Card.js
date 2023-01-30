@@ -47,7 +47,7 @@ const Card = () => {
                 <Image
                   src={data.src}
                   alt="Partners"
-                  style={{ height: "auto", maxWidth: "250px",borderRadius:"100%" }}
+                  style={{ height: "auto",maxHeight:"250px", maxWidth: "250px",borderRadius:"100%" }}
                 />
                 <div className="px-6 py-1 flex flex-col items-center">
                   <div className="font-bold text-xl mb-2 text-[#CABA93]">
