@@ -17,23 +17,12 @@ const AboutPage = () => {
             />
           </div>
           <div className="flex flex-col gap-4 md:gap-8 text-white w-full md:w-1/2">
-            <h1 className="text-4xl font-sans text-[#CABA93]">Our Goal</h1>
+            <h1 className="text-4xl font-sans text-[#CABA93]">Our Mission</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-              reiciendis recusandae quam, odit nesciunt consequuntur cumque
-              fugit eligendi culpa quae provident officiis cupiditate fugiat
-              soluta earum illum? Odio soluta animi tempora a saepe ab illo,
-              illum nostrum sunt, sequi cupiditate? Voluptatibus sequi maiores
-              dicta porro. Quasi, minus. Ipsum, atque repellat?
+            Our goal is to provide the jobs to those who are really deserving , primarily used for professional networking and career development , allow job seekers to post their CVs.
             </p>
-            <h1 className="text-4xl font-sans text-[#CABA93]">Optimism</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-              reiciendis recusandae quam, odit nesciunt consequuntur cumque
-              fugit eligendi culpa quae provident officiis cupiditate fugiat
-              soluta earum illum? Odio soluta animi tempora a saepe ab illo,
-              illum nostrum sunt, sequi cupiditate? Voluptatibus sequi maiores
-              dicta porro. Quasi, minus. Ipsum, atque repellat?
+            <h1 className="text-4xl font-sans text-[#CABA93]">Our Vision</h1>
+            <p>To be the most reliable hiring company that provide and enhance the employment rate
             </p>
             <button className="bg-[#6F6657] w-56 h-14 rounded-2xl">
               <span className="font-sans font-medium text-xl text-[#FEFCF9]">
