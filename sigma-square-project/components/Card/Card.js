@@ -12,25 +12,25 @@ const Card = () => {
       name: "Vatsal Mavani",
       src: vatsal,
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipis elit Voluptatibus",
+        "Vatsal Mavani is our Team Leader and very important pillar of our whole project, who managed whole Frontend part. A great Team Leader who knows how manage things, how to divide work and great at all the Frontend work.",
     },
     {
       name: "Kush Mevada",
       src: kush,
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipis elit Voluptatibus",
+        "Kush Mevada is also very important pillar of our whole project, as he managed the whole Backend part of the project also a very great communicator has an incredible ability to manage things under pressure.",
     },
     {
       name: "Maitri Parmar",
       src: maitri,
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipis elit Voluptatibus",
+        "Maitri Parmar is the 4th member of our team, who managed to do all the documentation and communication work. All content was done by her, her thinking & writing skill is just amazing.",
     },
     {
       name: "Dishant Korat",
       src: dishant,
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipis elit Voluptatibus",
+        "Dishant Korat is the 3rd team member of our project, who has an excellent knowledge about all the design work, he manages to do all the designing part of our project- a great UI designer.",
     },
   ];
 
