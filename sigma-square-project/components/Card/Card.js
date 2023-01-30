@@ -24,13 +24,13 @@ const Card = () => {
       name: "Maitri Parmar",
       src: maitri,
       description:
-        "Maitri Parmar is the 4th member of our team, who managed to do all the documentation and communication work. All content was done by her, her thinking & writing skill is just amazing.",
+        "Maitri Parmar is the 3rd member of our team, who managed to do all the documentation and communication work. All content was done by her, her thinking & writing skill is just amazing.",
     },
     {
       name: "Dishant Korat",
       src: dishant,
       description:
-        "Dishant Korat is the 3rd team member of our project, who has an excellent knowledge about all the design work, he manages to do all the designing part of our project- a great UI designer.",
+        "Dishant Korat is the 4th team member of our project, who has an excellent knowledge about all the design work, he manages to do all the designing part of our project- a great UI designer.",
     },
   ];
 
