@@ -8,22 +8,22 @@ const Card = () => {
     {
       name: "Vatsal Mavani",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit Voluptatibus quia, nulla! Maiores et perferendis eaque,exercitationem praesentium nihil.",
+        "Lorem ipsum dolor sit amet, consectetur adipis elit Voluptatibus",
     },
     {
       name: "Kush Mevada",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit Voluptatibus quia, nulla! Maiores et perferendis eaque,exercitationem praesentium nihil.",
+        "Lorem ipsum dolor sit amet, consectetur adipis elit Voluptatibus",
     },
     {
       name: "Maitri Parmar",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit Voluptatibus quia, nulla! Maiores et perferendis eaque,exercitationem praesentium nihil.",
+        "Lorem ipsum dolor sit amet, consectetur adipis elit Voluptatibus",
     },
     {
       name: "Dishant Korat",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit Voluptatibus quia, nulla! Maiores et perferendis eaque,exercitationem praesentium nihil.",
+        "Lorem ipsum dolor sit amet, consectetur adipis elit Voluptatibus",
     },
   ];
 
@@ -33,18 +33,18 @@ const Card = () => {
         <h1 className="text-6xl font-sans text-[#6F6657] py-7 font-semibold">
           Partners
         </h1>
-        <div className="grid grid-cols-2 gap-4 py-7 place-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-7 place-items-center">
           {partnersData.map((data) => {
             return (
-              <div className="flex flex-col items-center max-w-md rounded-3xl overflow-hidden shadow-md px-6 bg-white">
+              <div className="flex flex-col items-center max-w-md rounded-3xl overflow-hidden shadow-md p-6 bg-[#134F59]">
                 <Image
                   src={Sigma_Logo_2}
                   alt="Partners"
-                  style={{ height: "auto", width: "180px" }}
+                  style={{ height: "auto", maxWidth: "250px" }}
                 />
-                <div className="px-6 py-4 flex flex-col items-center">
-                  <div className="font-bold text-xl mb-2">{data.name}</div>
-                  <p className="text-gray-700 text-base">{data.description}</p>
+                <div className="px-6 py-1 flex flex-col items-center">
+                  <div className="font-bold text-xl mb-2 text-[#CABA93]">{data.name}</div>
+                  <p className="text-white text-base">{data.description}</p>
                 </div>
               </div>
             );
