@@ -184,20 +184,6 @@ const StartUpJoin = (props) => {
                 className="bg-[#D7CFC1] my-2 border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 "
                 placeholder="link"
               />
-              {/* <input
-                type="text"
-                name="link"
-                id="link"
-                className="bg-[#D7CFC1] my-2 border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 "
-                placeholder="link"
-              />
-              <input
-                type="text"
-                name="link"
-                id="link"
-                className="bg-[#D7CFC1] my-2 border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 "
-                placeholder="link"
-              /> */}
             </div>
             <div>
               <label

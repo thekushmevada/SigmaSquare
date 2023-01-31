@@ -1,88 +1,117 @@
-import Modal from "react-bootstrap/Modal";
+import { useState } from "react";
 import { RxCrossCircled } from "react-icons/rx";
-const Login = (props) => {
-  const { showLogin, handleCloseLogin} = props;
+import Modal from "@mui/material/Modal";
+import Box from "@mui/material/Box";
+import PropTypes from "prop-types";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import StartUpLogin from "./StartUpLogin";
+import UserLogin from "./UserLogin";
+import AdminLogin from "./AdminLogin";
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
+
   return (
-    <Modal show={showLogin} onHide={handleCloseLogin}>
-      <div className="bg-[#2e2b22] flex flex-col">
-        <button
-          className="flex justify-end mt-3 mr-3"
-          onClick={handleCloseLogin}
-        >
-          <RxCrossCircled color="white" size="40px" />
-        </button>
-        <br />
-        <div className="text-center">
-          <h1 className=" text-4xl font-sans text-[#CABA93] font-semibold">
-            Log In
-          </h1>
-        </div>
-        <section>
-          <div className="flex flex-col items-center justify-center px-2 py-8 w-full gap-4">
-            <form className="space-y-4 w-full px-4" action="/api/login" method="post">
-              <div>
-                <label
-                  for="email"
-                  className="block mb-2 text-sm font-medium text-white"
-                >
-                  Your email
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  className="bg-[#D7CFC1] border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
-                  placeholder="name@company.com"
-                  required=""
-                />
-              </div>
-              <div>
-                <label
-                  for="password"
-                  className="block mb-2 text-sm font-medium text-white"
-                >
-                  Password
-                </label>
-                <input
-                  type="password"
-                  name="password"
-                  id="password"
-                  placeholder="••••••••"
-                  className="bg-[#D7CFC1] border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
-                  required=""
-                />
-              </div>
-              <div className="flex items-center justify-between">
-                <div className="flex items-start">
-                  <div className="flex items-center h-5">
-                    <input
-                      id="remember"
-                      aria-describedby="remember"
-                      type="checkbox"
-                      className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300"
-                      required=""
-                    />
-                  </div>
-                  <div className="ml-3 text-sm">
-                    <label for="remember" className="text-white">
-                      Remember me
-                    </label>
-                  </div>
-                </div>
-                <span className="text-sm font-medium text-white hover:underline ">
-                  Forgot password?
-                </span>
-              </div>
-              <input className="bg-[#6F6657] w-28 md:w-44 h-12 rounded-lg" type="submit" value='Login' />
-              {/* <button className="bg-[#6F6657] w-44 h-12 rounded-lg">
-                <span className="font-sans font-medium text-xl text-[#FEFCF9]">
-                  Log In
-                </span>
-              </button> */}
-            </form>
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box sx={{ p: 2, overflowY: "auto" }}>{children}</Box>
+      )}
+    </div>
+  );
+}
+
+TabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired,
+};
+
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    "aria-controls": `simple-tabpanel-${index}`,
+  };
+}
+
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  maxWidth: 500,
+  bgcolor: "background.paper",
+  width: "100%",
+};
+
+const Login = (props) => {
+  const { showLogin, handleCloseLogin } = props;
+  const [value, setValue] = useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+  return (
+    <Modal open={showLogin} onClose={handleCloseLogin}>
+      <Box sx={style}>
+        <div className="bg-[#2e2b22] flex flex-col">
+          <button
+            className="flex justify-end mt-3 mr-3"
+            onClick={handleCloseLogin}
+          >
+            <RxCrossCircled color="white" size="40px" />
+          </button>
+          <br />
+          <div className="text-center">
+            <span className=" text-4xl font-sans text-[#CABA93] font-semibold">
+              Log In
+            </span>
+            <span className="px-3 text-2xl text-[#CABA93] font-semibold">
+              as
+            </span>
           </div>
-        </section>
-      </div>
+          <div className="flex text-[#CABA93] font-semibold pt-6 justify-center item-center space-x-3 ">
+            <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+              <Tabs
+                value={value}
+                onChange={handleChange}
+                aria-label="basic tabs example"
+                TabIndicatorProps={{ style: { background: "white" } }}
+              >
+                <Tab
+                  label="Start Up"
+                  {...a11yProps(0)}
+                  style={{ color: "#CABA93" }}
+                />
+                <Tab
+                  label="User"
+                  {...a11yProps(1)}
+                  style={{ color: "#CABA93" }}
+                />
+                <Tab
+                  label="Admin"
+                  {...a11yProps(1)}
+                  style={{ color: "#CABA93" }}
+                />
+              </Tabs>
+            </Box>
+          </div>
+          <TabPanel value={value} index={0}>
+            <StartUpLogin />
+          </TabPanel>
+          <TabPanel value={value} index={1}>
+            <UserLogin />
+          </TabPanel>
+          <TabPanel value={value} index={2}>
+            <AdminLogin />
+          </TabPanel>
+        </div>
+      </Box>
     </Modal>
   );
 };
