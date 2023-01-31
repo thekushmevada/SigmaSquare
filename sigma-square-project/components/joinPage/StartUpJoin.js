@@ -7,7 +7,7 @@ const StartUpJoin = (props) => {
       <div className="flex flex-col items-center justify-center px-2 py-4 w-full gap-4">
         <form
           className="space-y-4 w-full px-4"
-          action="/api/register"
+          action="/api/startupRegister"
           method="post"
         >
           <div>
@@ -20,7 +20,7 @@ const StartUpJoin = (props) => {
             <input
               type="text"
               name="name"
-              id="name"
+              id="startupName"
               className="bg-[#D7CFC1] border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 "
               placeholder="company"
             />
@@ -35,7 +35,7 @@ const StartUpJoin = (props) => {
             <input
               type="email"
               name="email"
-              id="email"
+              id="emailProfessional"
               className="bg-[#D7CFC1] border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
               placeholder="name@company.com"
               // required=""
@@ -66,7 +66,7 @@ const StartUpJoin = (props) => {
             <input
               type="text"
               name="Mobile"
-              id="Mobile"
+              id="mobileNo"
               placeholder="99******00"
               className="bg-[#D7CFC1] border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
             />
@@ -89,7 +89,7 @@ const StartUpJoin = (props) => {
                 <input
                   type="text"
                   name="state"
-                  id="state"
+                  id="stateAdd"
                   placeholder="state"
                   className="bg-[#D7CFC1] border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
                 />
@@ -120,7 +120,7 @@ const StartUpJoin = (props) => {
               <input
                 type="text"
                 name="Descripition"
-                id="Descripition"
+                id="descripition"
                 className="bg-[#D7CFC1] border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 "
                 placeholder="Descripition"
               />
@@ -135,7 +135,7 @@ const StartUpJoin = (props) => {
               <input
                 type="text"
                 name="Industry"
-                id="Industry"
+                id="industry"
                 className="bg-[#D7CFC1] border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 "
                 placeholder="Industry"
               />
@@ -184,7 +184,7 @@ const StartUpJoin = (props) => {
                 className="bg-[#D7CFC1] my-2 border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 "
                 placeholder="link"
               />
-              <input
+              {/* <input
                 type="text"
                 name="link"
                 id="link"
@@ -197,7 +197,7 @@ const StartUpJoin = (props) => {
                 id="link"
                 className="bg-[#D7CFC1] my-2 border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 "
                 placeholder="link"
-              />
+              /> */}
             </div>
             <div>
               <label
@@ -224,7 +224,7 @@ const StartUpJoin = (props) => {
               <input
                 type="text"
                 name="Founder"
-                id="Founder"
+                id="founder"
                 className="bg-[#D7CFC1] border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 "
                 placeholder="Founder"
               />
