@@ -14,7 +14,7 @@ const UserLogin = () => {
               for="email"
               className="block mb-2 text-sm font-medium text-white"
             >
-              Your email
+              User email
             </label>
             <input
               type="email"
