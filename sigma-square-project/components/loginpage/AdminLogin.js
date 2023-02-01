@@ -6,7 +6,7 @@ const AdminLogin = () => {
       <div className="flex flex-col items-center justify-center px-2 py-8 w-full gap-4">
         <form
           className="space-y-4 w-full px-4"
-          action="/api/login"
+          //action="/api/login"
           method="post"
         >
           <div>
@@ -63,7 +63,7 @@ const AdminLogin = () => {
             </span>
           </div>
           <input
-            className="bg-[#6F6657] w-28 md:w-44 h-12 rounded-lg"
+            className="bg-[#6F6657] w-28 md:w-44 h-12 rounded-lg text-[#D7CFC1] font-semibold"
             type="submit"
             value="Login"
           />

@@ -63,9 +63,10 @@ const UserLogin = () => {
             </span>
           </div>
           <input
-            className="bg-[#6F6657] w-28 md:w-44 h-12 rounded-lg"
+            className="bg-[#6F6657] w-28 md:w-44 h-12 rounded-lg text-[#D7CFC1] font-semibold"
             type="submit"
             value="Login"
+            
           />
           {/* <button className="bg-[#6F6657] w-44 h-12 rounded-lg">
                 <span className="font-sans font-medium text-xl text-[#FEFCF9]">
