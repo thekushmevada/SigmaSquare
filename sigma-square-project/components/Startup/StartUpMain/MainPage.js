@@ -7,24 +7,7 @@ import { FaPlus } from "react-icons/fa";
 import mainpage_img_1 from "../../../img/mainpage_img_1.png";
 import mainpage_img_2 from "../../../img/mainpage_img_2.png";
 import mainpage_img_3 from "../../../img/mainpage_img_3.png";
-import mainpage_img_4 from "../../../img/mainpage_img_4.png";
 const MainPage = () => {
-  const imgPagination = {
-    items: [
-      {
-        src: mainpage_img_1,
-      },
-      {
-        src: mainpage_img_2,
-      },
-      {
-        src: mainpage_img_3,
-      },
-      {
-        src: mainpage_img_4,
-      },
-    ],
-  };
   return (
     <div className="w-full flex h-auto pb-24 pt-44 bg-[#fefcf9]">
       <div className="max-w-7xl mx-auto px-6 w-full">
@@ -70,16 +53,19 @@ const MainPage = () => {
           <div className="flex flex-col bg-[#134F59] rounded-xl w-1/4">
             <div className="bg-[#0b2f35] w-full flex flex-col rounded-t-xl py-3">
               <div className="w-full flex justify-center">
-                <FaPlus
-                  size="120px"
-                  color="white"
-                  style={{
-                    backgroundColor: "#79C0BC",
-                    padding: "20px",
-                    margin: "10px",
-                    borderRadius: "9999px",
-                  }}
-                />
+                <Link href="/startup/hire">
+                  <FaPlus
+                    size="120px"
+                    color="white"
+                    style={{
+                      backgroundColor: "#79C0BC",
+                      padding: "20px",
+                      margin: "10px",
+                      borderRadius: "9999px",
+                      cursor: "pointer",
+                    }}
+                  />
+                </Link>
               </div>
               <div className="text-white font-semibold text-center text-xl">
                 Hire now
