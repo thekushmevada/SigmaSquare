@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { RiPagesLine } from "react-icons/ri";
 const MainPage = () => {
@@ -45,9 +46,11 @@ const MainPage = () => {
                 </div>
               </div>
             </div>
-            <button className=" bg-[#6F6657] hover:bg-[#4E4A3F] text-white font-bold py-2 rounded-full w-full">
-              Apply more
-            </button>
+            <Link href="/user/jobs">
+              <button className=" bg-[#6F6657] hover:bg-[#4E4A3F] text-white font-bold py-2 rounded-full w-full">
+                Apply more
+              </button>
+            </Link>
           </div>
           <div className="border-2 border-black"></div>
           <div className="flex flex-col gap-3 w-1/3 bg-[#6F6657] px-8 rounded-xl py-5">

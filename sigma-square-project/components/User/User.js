@@ -3,14 +3,12 @@ import Navbar from "./UserNavbar/Navbar";
 import Footer from "../footer/Footer";
 import MainPage from "./UserMain/MainPage";
 import SubNavbar from "./UserNavbar/SubNavbar";
+import Layout from "./UserLayout/Layout";
 const User = () => {
   return (
-    <>
-      <Navbar />
-      <SubNavbar/>
+    <Layout>
       <MainPage />
-      <Footer />
-    </>
+    </Layout>
   );
 };
 
