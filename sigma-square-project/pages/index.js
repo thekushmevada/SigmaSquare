@@ -12,7 +12,7 @@ export default function Home() {
       <ImgPagination />
       <AboutPage />
       <Card />
-      <div>
+      {/* <div>
       
       <form action="/api/adminRegister" method="post">
       
@@ -34,7 +34,7 @@ export default function Home() {
         </center>
 
       </form>
-      </div>
+      </div> */}
       <Footer />
     </>
   );
