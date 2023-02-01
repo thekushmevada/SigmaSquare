@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { RiMenu3Line } from "react-icons/ri";
+import { FiFilter } from "react-icons/fi";
+import { IoIosChatboxes } from "react-icons/io";
 
 const SubNav = () => {
   const [open, setOpen] = useState(false);
@@ -63,6 +65,28 @@ const SubNav = () => {
             <input
               type="search"
               className="w-full rounded-full bg-[#6F6657] pl-10 pr-3 py-2 text-[#FEFCF9]"
+            />
+          </div>
+          <div className="flex">
+            <FiFilter
+              size="65px"
+              color="white"
+              style={{
+                backgroundColor: "#61594D",
+                padding: "15px",
+                margin: "10px",
+                borderRadius: "9999px",
+              }}
+            />
+            <IoIosChatboxes
+              size="65px"
+              color="white"
+              style={{
+                backgroundColor: "#61594D",
+                padding: "15px",
+                margin: "10px",
+                borderRadius: "9999px",
+              }}
             />
           </div>
         </div>

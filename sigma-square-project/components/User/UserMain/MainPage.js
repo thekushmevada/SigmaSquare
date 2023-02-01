@@ -2,7 +2,7 @@ import React from "react";
 import { RiPagesLine } from "react-icons/ri";
 const MainPage = () => {
   return (
-    <div className="w-full flex h-auto py-14 mt-40">
+    <div className="w-full flex h-auto pb-24 pt-44 bg-[#fefcf9]">
       <div className="max-w-7xl mx-auto px-6 w-full">
         <div className="flex justify-evenly w-full">
           <div className="flex flex-col bg-[#134F59] rounded-xl p-12 gap-4 w-1/3">
@@ -55,12 +55,34 @@ const MainPage = () => {
               Aquire new skills
             </div>
             <div className="flex flex-col gap-2 text-lg text-white">
-              <div>- Flutter</div>
-              <div>- NextJs</div>
-              <div>- MongoDB</div>
-              <div>- NestJs</div>
-              <div>- Tailwind Css</div>
-              <div>- Python</div>
+              <div>
+                - Flutter{" "}
+                <span className="text-[#CABA93] px-2">
+                  (Android/Ios Application)
+                </span>
+              </div>
+              <div>
+                - NextJs{" "}
+                <span className="text-[#CABA93] px-2">(Front-end Web-app)</span>
+              </div>
+              <div>
+                - MongoDB{" "}
+                <span className="text-[#CABA93] px-2">(Database)</span>
+              </div>
+              <div>
+                - NestJs{" "}
+                <span className="text-[#CABA93] px-2">(Back-end Web-app)</span>
+              </div>
+              <div>
+                - Tailwind Css{" "}
+                <span className="text-[#CABA93] px-2">(UI Framework)</span>
+              </div>
+              <div>
+                - Python{" "}
+                <span className="text-[#CABA93] px-2">
+                  (Programming Language)
+                </span>
+              </div>
             </div>
           </div>
         </div>
