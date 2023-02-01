@@ -6,7 +6,7 @@ const AdminLogin = () => {
       <div className="flex flex-col items-center justify-center px-2 py-8 w-full gap-4">
         <form
           className="space-y-4 w-full px-4"
-          //action="/api/login"
+          action="/api/adminLogin"
           method="post"
         >
           <div>
@@ -17,12 +17,12 @@ const AdminLogin = () => {
               Admin email
             </label>
             <input
-              type="email"
-              name="email"
-              id="email"
+              type="text"
+              name="username"
+              id="username"
               className="bg-[#D7CFC1] border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
               placeholder="name@company.com"
-              required=""
+              //required=""
             />
           </div>
           <div>

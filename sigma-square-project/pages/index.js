@@ -12,6 +12,29 @@ export default function Home() {
       <ImgPagination />
       <AboutPage />
       <Card />
+      <div>
+      
+      <form action="/api/adminRegister" method="post">
+      
+        <center>
+        <h1> Registraion </h1>
+        <label>
+          EMail Address
+        </label>
+        <br></br>
+        <input type='text' name='username' placeholder='Type your email'></input>
+        <br></br>
+        <label>
+          Pasword
+        </label>
+        <br></br>
+        <input type='password' name='password' placeholder='Type your password'></input>
+        <br></br>
+        <input type='submit' value='Register'></input>
+        </center>
+
+      </form>
+      </div>
       <Footer />
     </>
   );
