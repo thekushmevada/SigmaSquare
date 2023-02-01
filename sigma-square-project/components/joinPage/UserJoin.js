@@ -6,7 +6,7 @@ const UserJoin = () => {
       <div className="flex flex-col items-center justify-center px-2 py-4 w-full gap-4">
         <form
           className="space-y-4 w-full px-4"
-          action="/api/startupRegister"
+          action="/api/register"
           method="post"
         >
           <div>
