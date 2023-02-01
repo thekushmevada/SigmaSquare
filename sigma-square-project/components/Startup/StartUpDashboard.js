@@ -1,6 +1,11 @@
-import Navbar from "./StartupNavbar/Navbar";
+import Layout from "./StartUpLayout/Layout";
+import MainPage from "./StartUpMain/MainPage";
 
 const StartUpDashboard = () => {
-  return <Navbar />;
+  return (
+    <Layout>
+      <MainPage/>
+    </Layout>
+  );
 };
 export default StartUpDashboard;

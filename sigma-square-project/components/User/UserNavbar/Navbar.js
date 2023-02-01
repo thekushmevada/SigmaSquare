@@ -19,6 +19,11 @@ const Navbar = () => {
               Jobs
             </div>
           </Link>
+          <Link href="/" style={{textDecoration:"none"}}>
+            <div className="text-[#CABA93] font-semibold flex items-end px-2">
+              Logout
+            </div>
+          </Link>
         </div>
         <div className="flex gap-2">
           <div className="text-2xl text-white font-semibold">Welcome ,</div>
