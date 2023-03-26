@@ -6,7 +6,7 @@ const StartUpLogin = () => {
       <div className="flex flex-col items-center justify-center px-2 py-8 w-full gap-4">
         <form
           className="space-y-4 w-full px-4"
-          //action="/api/login"
+          action="/api/startupLogin"
           method="post"
         >
           <div>

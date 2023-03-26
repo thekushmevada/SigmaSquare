@@ -6,8 +6,13 @@ import AboutPage from "../components/aboutPage/AboutPage";
 import Card from "../components/Card/Card";
 
 export default function Home() {
+
+ // const data = fetch("/api/hello").then((res)=>res.json).then((data)=>data);
+
+ // console.log(data);
   return (
     <>
+    
       <HeaderMain />
       <ImgPagination />
       <AboutPage />

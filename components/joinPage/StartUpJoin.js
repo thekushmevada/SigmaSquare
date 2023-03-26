@@ -140,7 +140,7 @@ const StartUpJoin = (props) => {
                 placeholder="Industry"
               />
             </div>
-            <div>
+            {/* <div>
               <label
                 htmlFor="text"
                 className="block my-2 text-sm font-medium text-white"
@@ -154,7 +154,7 @@ const StartUpJoin = (props) => {
                 className="bg-[#D7CFC1] border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 "
                 placeholder="uid"
               />
-            </div>
+            </div> */}
             <div>
               <label
                 htmlFor="text"

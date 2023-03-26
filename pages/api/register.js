@@ -11,7 +11,7 @@ export default async function handler(req,res){
             return res.json({"code":'User not created'})
         }
     } catch (error) {
-        console.log(error);
+       // console.log(error);
         res.status(400).json({status:'Not able to create a new user.'})
     }
 }
